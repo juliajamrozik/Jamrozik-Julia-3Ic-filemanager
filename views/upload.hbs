@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>upload</title>
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="nawigacja">
+            <div class="upload"><a href="/">upload</a></div>
+            <div class="filemanager"><a href="/filemanager">filemanager</a></div>
+            <div class="info"><a href="/info">info</a></div>
+        </div>
+    </div>
+
+    <div class="napis">multiupload</div>
+    <form action="/handleUpload" enctype="multipart/form-data" method="POST">
+        <div class="plik">
+            <input type="file" required accept="*/*" name="imagetoupload" multiple>
+            <input type="submit" value="Upload">
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>

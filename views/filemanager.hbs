@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="nawigacja">
+            <div class="upload"><a href="/">upload</a></div>
+            <div class="filemanager"><a href="/filemanager">filemanager</a></div>
+            <div class="info"><a href="/info">info</a></div>
+        </div>
+    </div>
+    <div class="calosc">
+        <div class="div2">
+            <div class="napis">filemanager</div>
+            <div class="usun"><a href="/delete">usun dane o plikach <br> z tablicy</a></div>
+        </div>
+        <div class="tabela">
+            <div>id</div>
+            <div>obraz</div>
+            <div>name</div>
+            <div>size</div>
+            <div>type</div>
+            <div>-</div>
+            <div>-</div>
+            <div>-</div>
+            {{#each files}}
+            {{>file}}
+            {{/each}}
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
