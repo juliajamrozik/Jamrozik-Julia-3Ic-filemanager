@@ -61,9 +61,9 @@ app.post('/handleUpload', function (req, res) {
             indexPliku++;
             console.log(saved_files)
         });
-
+        res.redirect('/filemanager')
     });
-    res.redirect('/filemanager')
+
 
     // if (files.imagetoupload.length != undefined) {
     //     saved_files = [...saved_files, ...files.imagetoupload]
