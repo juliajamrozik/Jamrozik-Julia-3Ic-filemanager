@@ -103,3 +103,12 @@ app.get("/info/:id", function (req, res) {
     res.render('info.hbs', file);
 })
 
+app.get("/download/:id", function (req, res) {
+    a = req.params.id
+    saved_files.forEach(plik => {
+        if (plik.id == a) {
+            res.download(plik.path)
+        }
+    })
+})
+
